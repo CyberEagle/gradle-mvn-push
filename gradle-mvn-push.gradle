@@ -74,7 +74,7 @@ def setUpPom(pom){
 }
 
 task androidJavadocs(type: Javadoc) {
-    source = android.sourceSets.main.allJava
+    source = android.sourceSets.main.java
 }
 
 task androidJavadocsJar(type: Jar, dependsOn: androidJavadocs) {
